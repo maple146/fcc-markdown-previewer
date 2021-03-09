@@ -1,5 +1,22 @@
 .App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  color: white;
   text-align: center;
+}
+
+code {
+  background-color: white;
+  color: #282c34;
+}
+
+#preview {
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -28,11 +45,3 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
