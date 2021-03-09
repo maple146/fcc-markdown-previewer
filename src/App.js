@@ -1,8 +1,10 @@
 import './App.css';
 import {useState} from 'react';
+import marked from 'marked';
 
 function App() {
   const [textAreaValue, setTextAreaValue] = useState("")
+  const markedText = marked(textAreaValue);
 
   const handleChange = (event) => {
     setTextAreaValue(event.target.value)
@@ -16,7 +18,8 @@ function App() {
       </div>
       <div className="preview">
         <h1>Preview</h1>
-        <h2 id="preview">{textAreaValue}</h2>
+        {/* <div id="preview">{textAreaValue}</div> */}
+        <div id="preview" dangerouslySetInnerHTML={{__html: markedText}}></div>
       </div>
     </div>
   );
