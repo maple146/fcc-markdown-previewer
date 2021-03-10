@@ -16,12 +16,12 @@ function App() {
 
   return (
     <div className="App">
-      <div className="editor">
-        <h1>Editor</h1>
-        <textarea name="editor" id="editor" cols="30" rows="10" defaultValue={placeholder} onChange={handleChange}></textarea>
+      <div className="editor-section">
+        <h3>Editor</h3>
+        <textarea name="editor" id="editor" defaultValue={placeholder} onChange={handleChange}></textarea>
       </div>
-      <div className="preview">
-        <h1>Preview</h1>
+      <div className="preview-section">
+        <h3>Preview</h3>
         <div id="preview" dangerouslySetInnerHTML={{__html: markedText}}></div>
       </div>
     </div>
